@@ -4,8 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | SDProtect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box;}
+
+        body {
+            background-color: rgba(0, 158, 149, 1);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            text-align: center;
+            margin: auto;
+        }
+        main h1 {
+            font-family: "Faster One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 100px;
+            color: white;
+            line-height: 70px;
+            padding-bottom: 100px;
+        }
+        main h1::selection,
+        main h1 span::selection,
+        main h1 br::selection {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        main .buttons a {
+            background-color: rgba(0,0,0, 0.20);
+            padding: 20px 30px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-family: "Krona One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            box-shadow: -2px 2px rgba(0, 0, 0, 0.3);
+            transition: 0.5s;
+            margin: 0px 10px;
+        }
+        main .buttons a:hover {
+            background-color: rgba(0,0,0, 0.15);
+        }
+        main .buttons a:active {
+            background-color: rgba(0,0,0, 0.1);
+            box-shadow: none;
+        }
+        main .buttons a i {
+            font-size: 20px;
+            padding: 5px;
+            transform: translateY(1px);
+        }
+        .sidebars,
+        .sidebar {
+            position: absolute;
+            width: 10%;
+            height: 100%;
+            left: 0;
+        }
+        .sidebars svg,
+        .sidebar svg {
+            position: absolute;
+            left: 110px;
+            animation: float 3s infinite ease-in-out;
+        }
+        .sidebars svg:nth-child(1),
+        .sidebar svg:nth-child(1) {
+            top: 40vh;
+            transform: rotate(10deg);
+            animation-delay: 0.2s;
+        }
+        .sidebars svg:nth-child(2),
+        .sidebar svg:nth-child(2) {
+            top: calc(40vh + 160px);
+            left: 140px;
+            transform: rotate(-20deg);
+            animation-delay: 0.3s;
+        }
+        .sidebars svg:nth-child(3),
+        .sidebar svg:nth-child(3) {
+            top: calc(40vh - 80px);
+            left: 110px;
+            transform: rotate(30deg);
+            animation-delay: 0.1s;
+        }
+        .sidebars {
+            left: auto;
+            right: 0;
+            transform: translateX(-100%) scaleX(-100%);
+        }
+        .sidebars svg {
+            left: auto;
+            right: 110px;
+            transform: rotate(50deg);
+            animation-delay: 0.9s;
+        }
+        .sidebars svg:nth-child(2) {
+            left: auto;
+            right: 140px;
+            transform: rotate(20deg);
+            animation-delay: 0.7s;
+        }
+        .sidebars svg:nth-child(3) {
+            left: auto;
+            right: 140px;
+            transform: rotate(30deg);
+            animation-delay: 0.6s;
+        }
+        @keyframes float {
+            0%,100%{}
+            50%{
+                transform: translateY(30px);
+            }
+        }
+        @media (max-width: 1279px) {
+            .sidebar,
+            .sidebars {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <div class="sidebar">
+        <svg width="135" height="135" viewBox="0 0 135 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_8)">
+            <path d="M132.004 0.558052L132.388 152.112L0.94616 76.6673L132.004 0.558052Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_8" x="0.946045" y="0.558044" width="133.441" height="155.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_8" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+        <svg width="75" height="75" viewBox="0 0 135 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_8)">
+            <path d="M132.004 0.558052L132.388 152.112L0.94616 76.6673L132.004 0.558052Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_8" x="0.946045" y="0.558044" width="133.441" height="155.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_8" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+        <svg width="75" height="75" viewBox="0 0 135 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_8)">
+            <path d="M132.004 0.558052L132.388 152.112L0.94616 76.6673L132.004 0.558052Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_8" x="0.946045" y="0.558044" width="133.441" height="155.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_8" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+    </div>
+    <main>
+        <h1>S<span style="color: rgba(179, 227, 224, 1)">imple</span><br> D<span style="color: rgba(179, 227, 224, 1)">iscord</span><br> P<span style="color: rgba(225, 239, 238, 1)">rotect</span><span style="color: rgba(179, 227, 224, 1)">ion</span></h1>
+        <div class="buttons">
+            <a href="https://github.com/ShadowDevq/SDProtect"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1218608999092457492&permissions=8&scope=bot"><i class="fa-solid fa-arrow-right-to-bracket"></i> Add Bot</a>
+            <a href="/about"><i class="fa-solid fa-circle-info"></i> About Us</a>
+        </div>
+    </main>
+    <div class="sidebars">
+        <svg width="135" height="135" viewBox="0 0 135 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_8)">
+            <path d="M132.004 0.558052L132.388 152.112L0.94616 76.6673L132.004 0.558052Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_8" x="0.946045" y="0.558044" width="133.441" height="155.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_8" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+        <svg width="75" height="75" viewBox="0 0 135 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_8)">
+            <path d="M132.004 0.558052L132.388 152.112L0.94616 76.6673L132.004 0.558052Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_8" x="0.946045" y="0.558044" width="133.441" height="155.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_8" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+        <svg width="75" height="75" viewBox="0 0 135 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_8)">
+            <path d="M132.004 0.558052L132.388 152.112L0.94616 76.6673L132.004 0.558052Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_8" x="0.946045" y="0.558044" width="133.441" height="155.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_8" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+    </div>
 </body>
 </html>
